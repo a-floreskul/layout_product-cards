@@ -1,0 +1,106 @@
+$button-color: #00acdc;
+
+.product-card {
+  width: 200px;
+  border-radius: 5px;
+  border: black 1px solid;
+  box-sizing: border-box;
+  padding-top: 32px;
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__image {
+    width: 160px;
+    height: 134px;
+    margin: 0 19px 40px;
+
+    background-image: url(../images/imac.jpeg);
+    background-size: cover;
+  }
+
+  &__body {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    margin-bottom: 4px;
+  }
+
+  &__code {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+
+    margin-top: 16px;
+  }
+
+  &__reviews {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0;
+  }
+
+  &__price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-top: 24px;
+  }
+
+  &__price-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  &__price-value {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  &__button {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+    background-color: $button-color;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  &:hover &__button {
+    background-color: #fff;
+    border: $button-color 1px solid;
+    color: $button-color;
+  }
+}
